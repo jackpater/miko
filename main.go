@@ -11,9 +11,9 @@ import (
 	"github.com/beego/beego/v2/server/web/context"
 
 	"github.com/beego/beego/v2/server/web"
-	"github.com/jackpater/miko/controllers"
-	"github.com/jackpater/miko/models"
-	"github.com/jackpater/miko/qbot"
+	"github.com/jackpater/miko//controllers"
+	"github.com/jackpater/miko//models"
+	"github.com/jackpater/miko//qbot"
 )
 
 var theme = ""

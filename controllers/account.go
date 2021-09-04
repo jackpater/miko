@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/jackpater/miko/models"
+	"github.com/jackpater/miko//models"
 )
 
 type AccountController struct {
