@@ -11,9 +11,9 @@ import (
 	"github.com/beego/beego/v2/server/web/context"
 
 	"github.com/beego/beego/v2/server/web"
-	"github.com/cdle/xdd/controllers"
-	"github.com/cdle/xdd/models"
-	"github.com/cdle/xdd/qbot"
+	"github.com/jackpater/miko/controllers"
+	"github.com/jackpater/miko/models"
+	"github.com/jackpater/miko/qbot"
 )
 
 var theme = ""
@@ -72,7 +72,7 @@ func main() {
 	web.BConfig.WebConfig.Session.SessionName = models.AppName
 	go func() {
 		time.Sleep(time.Second * 4)
-		(&models.JdCookie{}).Push("小滴滴已启动")
+		(&models.JdCookie{}).Push("Miko已启动")
 	}()
 	if models.Config.QQID != 0 || models.Config.QQGroupID != 0 {
 		go qbot.Main()

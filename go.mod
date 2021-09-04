@@ -1,4 +1,4 @@
-module github.com/cdle/xdd
+module github.com/jackpater/miko
 
 go 1.16
 
